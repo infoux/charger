@@ -14,6 +14,12 @@
 
 @font-bold: 600;
 @font-normal: 400;
+
+@green : #118444;
+@green-dark : #598560;
+@green-light : #439e37;
+@green-lighter : #67a855;
+
 @gray-base: #000;
 @white-base: #fff;
 @gray-darker: lighten(@gray-base, 13.5%); // #222
@@ -65,7 +71,7 @@
     opacity: @opacity;
 }
 
-.gradient (@startColor:#eee, @endColor:white, @ingColor:#eee) {
+.gradient (@startColor:#eee, @ingColor:#eee, @endColor:white) {
     background-color: @startColor;
     background: -webkit-linear-gradient(top, @startColor, @ingColor, @endColor);
     background: -moz-linear-gradient(top, @startColor, @ingColor, @endColor);
@@ -133,6 +139,24 @@ a {
     text-decoration: none;
     color: #333;
 }
+
+
+.btn {
+  display:inline-block;
+  text-align:center;
+  padding:14px;
+  font-size:1rem;
+  color:#fff;
+}
+
+.btn.main {
+  background:@green;
+}
+
+.btn.sub {
+  background:@green-lighter;
+}
+
 /*font*/
 html {
     min-width: @min-width;

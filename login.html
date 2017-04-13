@@ -13,7 +13,7 @@
 
 </head>
 
-<body class="main">
+<body class="login">
     <!-- S:skip_navi -->
     <div class="skip_navi"> <a class="sr-only sr-only-focusable" href="#header">메뉴 바로가기</a> <a class="sr-only sr-only-focusable" href="#content">본문 바로가기</a> <a class="sr-only sr-only-focusable" href="#footer">푸터 바로가기</a> </div>
     <!-- E:skip_navi -->
@@ -24,21 +24,17 @@
     <!-- E:header -->
     <!-- S:content -->
     <article id="content">
-        <nav id="main_menu">
-          <ul>
-            <li class="w2x"><a href=""><p>로그인</p><i class="fi icon-peoples"></i></a></li>
-            <li><a href=""><p>카드관리</p><i class="fi icon-card"></i></a></li>
-            <li><a href=""><p>충전기정보</p><i class="fi icon-plug"></i></a></li>
-            <li><a href=""><p>이력조회</p><i class="fi icon-list"></i></a></li>
-            <li><a href=""><p>알림</p><i class="fi icon-ring "></i></a></li>
-            <li><a href=""><p>회원가입</p><i class="fi icon-sign"></i></a></li>
-            <li><a href=""><p>서비스관리</p><i class="fi icon-service"></i></a></li>
-            <li><a href=""><p>전기차소식</p><i class="fi icon-ev"></i></a></li>
-            <li><a href=""><p>FAQ</p><i class="fi icon-faq"></i></a></li>
-            <li><a href=""><p>공지사항</p><i class="fi icon-notice"></i></a></li>
-            <li><a href=""><p>도움말</p><i class="fi icon-help"></i></a></li>
-          </ul>
-        </nav>
+        <fieldset>
+          <legend class="sr-only">로그인정보 입력폼 입니다.</legend>
+          <label for="user-id">아이디를 입력하세요</label>
+          <input id="user-id" name="user-id" type="text" placeholder="아이디">
+          <label for="user-password">비밀번호를 입력하세요</label>
+          <input id="user-password" name="user-password" type="password" placeholder="비밀번호" class="passwd">
+          <p class="btn-set">
+            <a class="btn main" href="">로그인</a>
+            <a class="btn sub" href="">회원가입</a>
+          </p>
+        </fieldset>
     </article>
     <!-- E:content -->
     <!-- S:footer -->
