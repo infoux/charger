@@ -15,26 +15,24 @@
 @font-bold: 600;
 @font-normal: 400;
 
+@gray-darker : #333;
+@gray : #555;
+@gray-light : #999;
+
+
+
 @green : #118444;
+@green-darker : #00522d;
 @green-dark : #598560;
 @green-light : #439e37;
 @green-lighter : #67a855;
 
-@gray-base: #000;
-@white-base: #fff;
-@gray-darker: lighten(@gray-base, 13.5%); // #222
-@gray-dark: lighten(@gray-base, 20%); // #333
-@gray: lighten(@gray-base, 33.5%); // #555
-@gray-light: lighten(@gray-base, 46.7%); // #777
-@gray-lighter: lighten(@gray-base, 93.5%); // #eee
-@blue: #0075bc;
-@light-blue: @blue + #111;
-@dark-blue: @blue - #111;
-@green: #199d54;
-@dark-green: @green - #111;
-@yellow: #ffff00;
-@yellow-dark: #ffcc00;
-@orange: #f68409;
+@red : #cc0000;
+@red-darker : #a93229;
+
+
+
+
 @border-normal: 1px solid #eee;
 @header-height: 70px;
 
@@ -85,6 +83,14 @@
     background: -moz-linear-gradient(left, @startColor, @ingColor, @endColor);
     background: -ms-linear-gradient(left, @startColor, @ingColor, @endColor);
     background: -o-linear-gradient(left, @startColor, @ingColor, @endColor);
+}
+
+.rotate (@deg) {
+	-webkit-transform: rotate(@deg);
+	-moz-transform: 	 rotate(@deg);
+	-ms-transform: 		 rotate(@deg);
+	-o-transform: 		 rotate(@deg);
+  transform: 		 rotate(@deg);
 }
 
 .container(@con-width) {
@@ -141,21 +147,70 @@ a {
 }
 
 
+
+
 .btn {
   display:inline-block;
   text-align:center;
   padding:14px;
   font-size:1rem;
   color:#fff;
+  &.main {
+    background:@green;
+  }
+  &.sub {
+    background:@green-lighter;
+  }
 }
 
-.btn.main {
-  background:@green;
+
+.btn-set {
+  margin:0;
+  &.full {
+    position:fixed;
+    left:0;
+    right:0;
+    bottom:0;
+    .btn {
+      width:100%;
+      font-size:26px;
+      font-weight:600;
+    }
+  }
 }
 
-.btn.sub {
-  background:@green-lighter;
+.paging {
+  text-align:center;
+  margin:20px 0;
+  a {
+    display:inline-block;
+    border:1px solid @gray-light;
+    color:@gray;
+    width:36px;
+    height:36px;
+    line-height:36px;
+
+
+    &.arrow {
+      font-size:0;
+      border-color:transparent;
+      i {
+        font-style:normal;
+        font-size:1rem;
+      }
+    }
+  }
+  strong {
+    display:inline-block;
+    vertical-align:top;
+    width:36px;
+    height:36px;
+    line-height:36px;
+    background:@green-darker;
+    color:#fff;
+  }
 }
+
 
 /*font*/
 html {

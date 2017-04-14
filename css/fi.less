@@ -1,21 +1,22 @@
 @icomoon-font-path: "../fonts";
 
-@icon-card: "\e900";
-@icon-ev: "\e901";
-@icon-faq: "\e902";
-@icon-help: "\e903";
-@icon-home: "\e904";
-@icon-list: "\e905";
-@icon-location: "\e906";
-@icon-notice: "\e907";
-@icon-peoples: "\e908";
-@icon-plug: "\e909";
-@icon-ring: "\e90a";
-@icon-service: "\e90b";
-@icon-sign: "\e90c";
-@icon-zoom_minus: "\e90d";
-@icon-zoom_plus: "\e90e";
-
+@icon-back: "\e900";
+@icon-card: "\e901";
+@icon-close: "\e902";
+@icon-ev: "\e903";
+@icon-faq: "\e904";
+@icon-help: "\e905";
+@icon-list: "\e906";
+@icon-location: "\e907";
+@icon-menu: "\e908";
+@icon-notice: "\e909";
+@icon-peoples: "\e90a";
+@icon-plug: "\e90b";
+@icon-ring: "\e90c";
+@icon-service: "\e90d";
+@icon-sign: "\e90e";
+@icon-zoom_minus: "\e90f";
+@icon-zoom_plus: "\e910";
 
 
 @font-face {
@@ -45,9 +46,19 @@ i.fi {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-back {
+  &:before {
+    content: @icon-back;
+  }
+}
 .icon-card {
   &:before {
     content: @icon-card;
+  }
+}
+.icon-close {
+  &:before {
+    content: @icon-close;
   }
 }
 .icon-ev {
@@ -65,11 +76,6 @@ i.fi {
     content: @icon-help;
   }
 }
-.icon-home {
-  &:before {
-    content: @icon-home;
-  }
-}
 .icon-list {
   &:before {
     content: @icon-list;
@@ -78,6 +84,11 @@ i.fi {
 .icon-location {
   &:before {
     content: @icon-location;
+  }
+}
+.icon-menu {
+  &:before {
+    content: @icon-menu;
   }
 }
 .icon-notice {
