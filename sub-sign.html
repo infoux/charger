@@ -56,27 +56,53 @@
                 <dt><label for="user-passwd">비밀번호</label></dt>
                 <dd><input id="user-passwd" name="user-passwd" type="password" placeholder="비밀번호를 입력하세요"></dd>
             </dl>
-<p class="test">야옹</p>
             <h4>신용카드</h4>
             <dl>
                 <dt>
-                  <select>
+                  <select id="card">
                     <option>카드선택</option>
                     <option>비씨카드</option>
                   </select>
                   <i class="fi icon-back"></i>
             </dt>
-                <dd><input id="user-name" name="user-name" type="text" placeholder="****-****-****-****"></dd>
-                <dt><label for="user-id">발급년월</label></dt>
-                <dd><input id="user-id" name="user-id" type="text" placeholder="yyyy/mm"></dd>
+                <dd><input id="card-num" name="card-num" type="text" placeholder="****-****-****-****"></dd>
+                <dt><label for="card-date">발급년월</label></dt>
+                <dd>
+                  <p class="select">
+                    <select>
+                      <option>yyyy</option>
+                    </select>
+                    <i class="fi icon-back"></i>
+                  </p>
+                  <p class="select">
+                    <select id="card-date">
+                      <option>mm</option>
+                    </select>
+                    <i class="fi icon-back"></i>
+                  </p>
+
+                </dd>
             </dl>
 
             <h4>티머니카드</h4>
             <dl>
                 <dt>카드번호</dt>
                 <dd><input id="user-name" name="user-name" type="text" placeholder="****-****-****-****"></dd>
-                <dt><label for="user-id">발급년월</label></dt>
-                <dd><input id="user-id" name="user-id" type="text" placeholder="yyyy/mm"></dd>
+                <dt><label for="tmoney-date">발급년월</label></dt>
+                <dd>
+                  <p class="select">
+                    <select id="tmoney-date">
+                      <option>yyyy</option>
+                    </select>
+                    <i class="fi icon-back"></i>
+                  </p>
+                  <p class="select">
+                    <select>
+                      <option>mm</option>
+                    </select>
+                    <i class="fi icon-back"></i>
+                  </p>
+                </dd>
             </dl>
 
             <p class="btn-set full">
