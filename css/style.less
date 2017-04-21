@@ -30,7 +30,7 @@
                 height: 100%;
                 overflow: hidden;
                 font-size: 0;
-                background: url('../images/logo.svg') no-repeat center;
+                background: url('@{base-url}/logo.svg') no-repeat center;
             }
         }
     }
@@ -260,7 +260,7 @@
 
     #content {
 
-        fieldset {
+        .sign {
             border: none;
             .pad0-mag0;
             .rem(padding, 0 0 68);
@@ -328,6 +328,7 @@
             }
         }
 
+
         .history-list {
             list-style: none;
             .pad0-mag0;
@@ -394,6 +395,8 @@
                 }
             }
         }
+
+
 
         .map-info {
             position: relative;
@@ -733,5 +736,182 @@
                 color: @gray;
             }
         }
+    }
+
+    .card-info {
+      display:inline-block;
+      width:100%;
+      background:@white;
+      text-align:center;
+      .rem(padding, 44 0);
+      .card {
+        display:inline-block;
+        position:relative;
+        .rem(width, 300);
+        .rem(height, 190);
+        background: url('@{base-url}/card.svg') no-repeat center;
+        strong {
+          display:block;
+          position:absolute;
+          .rem(right, 20);
+          .rem(top, 20);
+          .rem(font-size, 20);
+          color:@gray;
+        }
+        p {
+          margin:0;
+          position:absolute;
+          .rem(right, 20);
+          .rem(top, 70);
+          .rem(font-size, 18);
+          color:@gray-light;
+        }
+
+
+
+
+      }
+    }
+
+    .use-list {
+      background:@white;
+      h3 {
+        display:inline-block;
+        .pad0-mag0;
+        width:100%;
+        .rem(padding, 20 0);
+        text-align:center;
+        background:@gray-lighter;
+        font-weight:@font-normal;
+        .rem(font-size, 22);
+        color:@gray;
+      }
+
+      .search {
+        .pad0-mag0;
+        .rem(padding, 22);
+        border:none;
+        .btn-set{
+          font-size:0;
+          input {
+            display:none;
+          }
+          label {
+            .rem(font-size, 22);
+            display:inline-block;
+            border:1px solid @gray-lighter;
+            .rem(padding, 10 0);
+            margin-right:4px;
+            width:calc(~"(100% - 12px) / 4");
+            text-align:center;
+            background:@white;
+            &:last-of-type {
+              margin-right:0;
+            }
+          }
+          input:checked + label {
+            color:@green;
+            border-color:@green;
+          }
+        }
+
+        .date {
+          font-size:0;
+          display:inline-block;
+          width:100%;
+          .rem(margin-top, 10);
+          .line {
+            display:inline-block;
+            width:5%;
+            .pad0-mag0;
+            .rem(font-size, 22);
+            text-align:center;
+          }
+          .from,
+          .to {
+            position:relative;
+            display:inline-block;
+            border:1px solid @gray-lighter;
+            .rem(padding, 10 0);
+            width:40%;
+            background:@white;
+            strong {
+              .rem(font-size, 22);
+              .rem(padding, 0 10);
+              font-weight:@font-normal;
+              color:@gray;
+            }
+            button {
+              position:absolute;
+              right:0;
+              background:none;
+              border:none;
+              .rem(padding, 0 10);
+
+              i {
+                .rem(font-size, 30);
+                color:@green;
+              }
+            }
+
+          }
+
+          .submit {
+            display:inline-block;
+            vertical-align:top;
+            width:calc(~"15% - 4px");
+            margin-left:4px;
+            background:@green;
+
+            .rem(height, 46);
+            border:1px solid transparent;
+            i {
+              color:@white;
+              .rem(font-size, 30);
+            }
+          }
+        }
+
+      }
+
+
+
+      h4.line {
+        display:inline-block;
+        position:relative;
+        width:100%;
+
+        .pad0-mag0;
+        .rem(margin, 22 0 44);
+        text-align:center;
+        strong {
+          display:inline-block;
+          position:relative;
+          z-index:200;
+          .rem(top, 11);
+          color:@gray;
+          background:@white;
+          .rem(padding, 0 10);
+        }
+        &:after {
+          content:"";
+          display:block;
+          position:absolute;
+          .rem(left, 22);
+          .rem(right, 22);
+          height:1px;
+          background:@gray-light;
+        }
+      }
+
+      .history-list {
+        border-top:1px solid @gray-lighter;
+        margin-top:0 !important;
+        li {
+          margin-bottom:0 !important;
+          border-bottom:1px solid @gray-lighter;
+        }
+      }
+
     }
 }
