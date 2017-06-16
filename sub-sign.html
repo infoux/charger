@@ -56,7 +56,7 @@
                 <dt><label for="user-passwd">비밀번호</label></dt>
                 <dd><input id="user-passwd" name="user-passwd" type="password" placeholder="비밀번호를 입력하세요"></dd>
             </dl>
-            <h4>신용카드</h4>
+            <h4><label class="sr-only" for="card">신용카드</label></h4>
             <dl>
                 <dt>
                   <select id="card">
@@ -66,15 +66,17 @@
                   <i class="fi icon-back"></i>
             </dt>
                 <dd><input id="card-num" name="card-num" type="text" placeholder="****-****-****-****"></dd>
-                <dt><label for="card-date">발급년월</label></dt>
+                <dt>발급년월</dt>
                 <dd>
                   <p class="select">
+                    <label class="sr-only" for="card-date">발급년도</label>
                     <select>
                       <option>yyyy</option>
                     </select>
                     <i class="fi icon-back"></i>
                   </p>
                   <p class="select">
+                    <label class="sr-only" for="card-date">발급일자</label>
                     <select id="card-date">
                       <option>mm</option>
                     </select>
@@ -88,16 +90,18 @@
             <dl>
                 <dt>카드번호</dt>
                 <dd><input id="user-name" name="user-name" type="text" placeholder="****-****-****-****"></dd>
-                <dt><label for="tmoney-date">발급년월</label></dt>
+                <dt>발급년월</dt>
                 <dd>
                   <p class="select">
-                    <select id="tmoney-date">
+                    <label class="sr-only" for="tmoney-year">발급년도</label>
+                    <select id="tmoney-year">
                       <option>yyyy</option>
                     </select>
                     <i class="fi icon-back"></i>
                   </p>
                   <p class="select">
-                    <select>
+                    <label class="sr-only" for="tmoney-date">발급일자</label>
+                    <select id="tmoney-date">
                       <option>mm</option>
                     </select>
                     <i class="fi icon-back"></i>
