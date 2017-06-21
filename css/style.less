@@ -604,7 +604,11 @@
             }
         }
         .map-info {
-            position: relative;
+            position: absolute;
+            z-index:10;
+            left:0;
+            right:0;
+            .rem(top, 80);
             list-style: none;
             .pad0-mag0;
             background: @white;
@@ -705,8 +709,7 @@
             position: absolute;
             left: 0;
             right: 0;
-            .rem(top,
-            195);
+            .rem(top, 80);
             bottom: 0;
             background: @gray-lighter;
             .tabs {
